@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: https://api-fxpractice.oanda.com/v1/accounts/1871900/orders
+    uri: https://api-fxpractice.oanda.com/v3/accounts/1871900/orders
     body:
       encoding: UTF-8
       string: instrument=EUR_USD&side=buy&type=market&units=10000

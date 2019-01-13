@@ -83,7 +83,7 @@ describe "OandaAPI::Streaming::Client" do
       END
 
       client = OandaAPI::Streaming::Client.new(:practice, "token")
-      stub_request(:get, "https://stream-fxpractice.oanda.com/v1/events").to_return(body: events_json, status: 200)
+      stub_request(:get, "https://stream-fxpractice.oanda.com/v3/events").to_return(body: events_json, status: 200)
       
       [{emit_heartbeats: true,  heartbeats: 1, non_heartbeats: 2},
        {emit_heartbeats: false, heartbeats: 0, non_heartbeats: 2}].each do |test|
@@ -117,7 +117,7 @@ describe "OandaAPI::Streaming::Client" do
       {"transaction":{"id":10001}}\r\n
       {"transaction":{"id":10002}}
       END
-      stub_request(:get, "https://stream-fxpractice.oanda.com/v1/events").to_return(body: events_json, status: 200)
+      stub_request(:get, "https://stream-fxpractice.oanda.com/v3/events").to_return(body: events_json, status: 200)
 
       client = OandaAPI::Streaming::Client.new(:practice, "token")
       expect(client.running?).to be false
@@ -136,7 +136,7 @@ describe "OandaAPI::Streaming::Client" do
 
     context "without using #stop!" do
       it "emits all objects in the stream" do
-        stub_request(:get, "https://stream-fxpractice.oanda.com/v1/events").to_return(body: events_json, status: 200)
+        stub_request(:get, "https://stream-fxpractice.oanda.com/v3/events").to_return(body: events_json, status: 200)
         client = OandaAPI::Streaming::Client.new(:practice, "token")
         event_ids = []
         client.events.stream { |event| event_ids << event.id }
@@ -146,7 +146,7 @@ describe "OandaAPI::Streaming::Client" do
 
     context "when using #stop!" do
       it "terminates emitting objects in the stream" do
-        stub_request(:get, "https://stream-fxpractice.oanda.com/v1/events").to_return(body: events_json, status: 200)
+        stub_request(:get, "https://stream-fxpractice.oanda.com/v3/events").to_return(body: events_json, status: 200)
         client = OandaAPI::Streaming::Client.new(:practice, "token")
         event_ids = []
         client.events.stream do |event, signaller|

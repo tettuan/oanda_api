@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api-fxpractice.oanda.com/labs/v1/spreads?instrument=EUR_CAD&period=3600
+    uri: https://api-fxpractice.oanda.com/labs/v3/spreads?instrument=EUR_CAD&period=3600
     body:
       encoding: US-ASCII
       string: ''

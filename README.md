@@ -174,27 +174,27 @@ for detailed documentation and API usage notes.
 
 | Ruby                       |  Oanda REST API      |
 |:---------------------------|:---------------------|
-| client.accounts.get        | GET /v1/accounts     |
-| client.account(123).get    | GET /v1/accounts/123 |
-| client.instruments(account_id: 123).get     | GET /v1/instruments?accountId=123  |
-| client.prices(instruments: ["EUR_USD","USD_JPY"]).get | GET /v1/prices/?instruments=EUR_USD%2CUSD_JPY |
-| client.account(123).orders.get | GET /v1/accounts/123/orders |
-| client.account(123).order(123).get | GET /v1/accounts/123/orders/123 |
-| client.account(123).order( *options* ).create | POST /v1/accounts/123/orders |
-| client.account(123).order(id:123, *options* ).update | PATCH /v1/accounts/123/orders/123 |
-| client.account(123).order(123).close | DELETE /v1/accounts/123/orders/123 |
-| client.account(123).positions.get | GET /v1/accounts/123/positions |
-| client.account(123).position("EUR_USD").get | GET /v1/accounts/123/positions/EUR_USD |
-| client.account(123).position("EUR_USD").close | DELETE /v1/accounts/123/positions/EUR_USD |
-| client.account(123).trades.get | GET /v1/accounts/123/trades |
-| client.account(123).trade(123).get | GET /v1/accounts/123/trades/123 |
-| client.account(123).trade(id:123, *options* ).update | PATCH /v1/accounts/123/trades/123 |
-| client.account(123).trade(123).close | DELETE /v1/accounts/123/trades/123 |
-| client.account(123).transactions.get | GET /v1/accounts/123/transactions |
-| client.account(123).transaction(123).get | GET /v1/accounts/123/transactions/123 |
-| client.account(123).alltransactions.get | GET /v1/accounts/123/alltransactions |
-| client.calendar(instrument: "AUD_USD", period: 86400).get | GET /labs/v1/calendar?instrument=AUD_USD&period=86400|
-| client.spreads(instrument: "AUD_USD", period: 86400).get | GET /labs/v1/spreads?instrument=AUD_USD&period=86400|
+| client.accounts.get        | GET /v3/accounts     |
+| client.account(123).get    | GET /v3/accounts/123 |
+| client.instruments(account_id: 123).get     | GET /v3/instruments?accountId=123  |
+| client.prices(instruments: ["EUR_USD","USD_JPY"]).get | GET /v3/prices/?instruments=EUR_USD%2CUSD_JPY |
+| client.account(123).orders.get | GET /v3/accounts/123/orders |
+| client.account(123).order(123).get | GET /v3/accounts/123/orders/123 |
+| client.account(123).order( *options* ).create | POST /v3/accounts/123/orders |
+| client.account(123).order(id:123, *options* ).update | PATCH /v3/accounts/123/orders/123 |
+| client.account(123).order(123).close | DELETE /v3/accounts/123/orders/123 |
+| client.account(123).positions.get | GET /v3/accounts/123/positions |
+| client.account(123).position("EUR_USD").get | GET /v3/accounts/123/positions/EUR_USD |
+| client.account(123).position("EUR_USD").close | DELETE /v3/accounts/123/positions/EUR_USD |
+| client.account(123).trades.get | GET /v3/accounts/123/trades |
+| client.account(123).trade(123).get | GET /v3/accounts/123/trades/123 |
+| client.account(123).trade(id:123, *options* ).update | PATCH /v3/accounts/123/trades/123 |
+| client.account(123).trade(123).close | DELETE /v3/accounts/123/trades/123 |
+| client.account(123).transactions.get | GET /v3/accounts/123/transactions |
+| client.account(123).transaction(123).get | GET /v3/accounts/123/transactions/123 |
+| client.account(123).alltransactions.get | GET /v3/accounts/123/alltransactions |
+| client.calendar(instrument: "AUD_USD", period: 86400).get | GET /labs/v3/calendar?instrument=AUD_USD&period=86400|
+| client.spreads(instrument: "AUD_USD", period: 86400).get | GET /labs/v3/spreads?instrument=AUD_USD&period=86400|
 
 
 

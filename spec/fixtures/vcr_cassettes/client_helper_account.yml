@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api-fxpractice.oanda.com/v1/accounts
+    uri: https://api-fxpractice.oanda.com/v3/accounts
     body:
       encoding: US-ASCII
       string: ''

@@ -134,13 +134,13 @@ describe "OandaAPI::Client" do
     let(:client) { ClientHelper.client }
 
     it "returns a response for a successful request" do
-      stub_request(:get, "https://api-fxpractice.oanda.com/v1/accounts")
+      stub_request(:get, "https://api-fxpractice.oanda.com/v3/accounts")
         .to_return(status: 200, body: "{\"accounts\" : []}", headers: { "content-type" => "application/json" })
       expect(client.execute_request(:get, "/accounts")).to be_an OandaAPI::ResourceCollection
     end
 
     it "raises OandaAPI::RequestError for an invalid request" do
-      stub_request(:get, "https://api-fxpractice.oanda.com/v1/accounts/a_bad_request")
+      stub_request(:get, "https://api-fxpractice.oanda.com/v3/accounts/a_bad_request")
         .to_return(status:  [404, "Something bad happened (but we still love you)."])
       expect { client.execute_request :get, "/accounts/a_bad_request" }.to raise_error(OandaAPI::RequestError)
     end

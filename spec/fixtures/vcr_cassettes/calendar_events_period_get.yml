@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api-fxpractice.oanda.com/labs/v1/calendar?period=86400
+    uri: https://api-fxpractice.oanda.com/labs/v3/calendar?period=86400
     body:
       encoding: US-ASCII
       string: ''

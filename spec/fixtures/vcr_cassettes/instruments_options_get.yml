@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api-fxpractice.oanda.com/v1/instruments?accountId=1871900&fields=pip,precision&instruments=EUR_USD,EUR_CAD
+    uri: https://api-fxpractice.oanda.com/v3/instruments?accountId=1871900&fields=pip,precision&instruments=EUR_USD,EUR_CAD
     body:
       encoding: US-ASCII
       string: ''

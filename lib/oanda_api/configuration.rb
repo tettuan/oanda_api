@@ -4,12 +4,12 @@ module OandaAPI
   # Configures client API settings.
   class Configuration
     DATETIME_FORMAT                = :rfc3339
-    LABS_API_VERSION               = "labs/v1"
+    LABS_API_VERSION               = "labs/v3"
     MAX_NEW_CONNECTIONS_PER_SECOND = 2
     MAX_REQUESTS_PER_SECOND        = 15
     OPEN_TIMEOUT                   = 10
     READ_TIMEOUT                   = 10
-    REST_API_VERSION               = "v1"
+    REST_API_VERSION               = "v3"
     USE_COMPRESSION                = false
     USE_REQUEST_THROTTLING         = false
     CONNECTION_POOL_SIZE           = 2

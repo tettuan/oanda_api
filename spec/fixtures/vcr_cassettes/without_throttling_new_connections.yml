@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api-fxpractice.oanda.com/v1/prices?instruments=EUR_USD
+    uri: https://api-fxpractice.oanda.com/v3/prices?instruments=EUR_USD
     body:
       encoding: US-ASCII
       string: ''
@@ -41,7 +41,7 @@ http_interactions:
   recorded_at: Tue, 12 Apr 2016 01:10:07 GMT
 - request:
     method: get
-    uri: https://api-fxpractice.oanda.com/v1/prices?instruments=EUR_USD
+    uri: https://api-fxpractice.oanda.com/v3/prices?instruments=EUR_USD
     body:
       encoding: US-ASCII
       string: ''
@@ -80,7 +80,7 @@ http_interactions:
   recorded_at: Tue, 12 Apr 2016 01:10:07 GMT
 - request:
     method: get
-    uri: https://api-fxpractice.oanda.com/v1/prices?instruments=EUR_USD
+    uri: https://api-fxpractice.oanda.com/v3/prices?instruments=EUR_USD
     body:
       encoding: US-ASCII
       string: ''
@@ -119,7 +119,7 @@ http_interactions:
   recorded_at: Tue, 12 Apr 2016 01:10:08 GMT
 - request:
     method: get
-    uri: https://api-fxpractice.oanda.com/v1/prices?instruments=EUR_USD
+    uri: https://api-fxpractice.oanda.com/v3/prices?instruments=EUR_USD
     body:
       encoding: US-ASCII
       string: ''
@@ -158,7 +158,7 @@ http_interactions:
   recorded_at: Tue, 12 Apr 2016 01:10:08 GMT
 - request:
     method: get
-    uri: https://api-fxpractice.oanda.com/v1/prices?instruments=EUR_USD
+    uri: https://api-fxpractice.oanda.com/v3/prices?instruments=EUR_USD
     body:
       encoding: US-ASCII
       string: ''
@@ -197,7 +197,7 @@ http_interactions:
   recorded_at: Tue, 12 Apr 2016 01:10:08 GMT
 - request:
     method: get
-    uri: https://api-fxpractice.oanda.com/v1/prices?instruments=EUR_USD
+    uri: https://api-fxpractice.oanda.com/v3/prices?instruments=EUR_USD
     body:
       encoding: US-ASCII
       string: ''
@@ -236,7 +236,7 @@ http_interactions:
   recorded_at: Tue, 12 Apr 2016 01:10:08 GMT
 - request:
     method: get
-    uri: https://api-fxpractice.oanda.com/v1/prices?instruments=EUR_USD
+    uri: https://api-fxpractice.oanda.com/v3/prices?instruments=EUR_USD
     body:
       encoding: US-ASCII
       string: ''
@@ -275,46 +275,7 @@ http_interactions:
   recorded_at: Tue, 12 Apr 2016 01:10:08 GMT
 - request:
     method: get
-    uri: https://api-fxpractice.oanda.com/v1/prices?instruments=EUR_USD
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      X-Accept-Datetime-Format:
-      - RFC3339
-      Authorization:
-      - Bearer <OANDA_TESTING_API_TOKEN>
-      Connection:
-      - keep-alive
-      Keep-Alive:
-      - 30
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - openresty/1.7.0.1
-      Date:
-      - Tue, 12 Apr 2016 01:10:09 GMT
-      Content-Type:
-      - application/json
-      Content-Length:
-      - '139'
-      Connection:
-      - keep-alive
-      Etag:
-      - '"82242c079ed86208ffd6320c1b4f1e236fcc6566"'
-    body:
-      encoding: UTF-8
-      string: "{\n\t\"prices\" : [\n\t\t{\n\t\t\t\"instrument\" : \"EUR_USD\",\n\t\
-        \t\t\"time\" : \"2016-04-12T01:10:03.272613Z\",\n\t\t\t\"bid\" : 1.14111,\n\
-        \t\t\t\"ask\" : 1.14124\n\t\t}\n\t]\n}"
-    http_version:
-  recorded_at: Tue, 12 Apr 2016 01:10:09 GMT
-- request:
-    method: get
-    uri: https://api-fxpractice.oanda.com/v1/prices?instruments=EUR_USD
+    uri: https://api-fxpractice.oanda.com/v3/prices?instruments=EUR_USD
     body:
       encoding: US-ASCII
       string: ''
@@ -353,7 +314,46 @@ http_interactions:
   recorded_at: Tue, 12 Apr 2016 01:10:09 GMT
 - request:
     method: get
-    uri: https://api-fxpractice.oanda.com/v1/prices?instruments=EUR_USD
+    uri: https://api-fxpractice.oanda.com/v3/prices?instruments=EUR_USD
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Accept-Datetime-Format:
+      - RFC3339
+      Authorization:
+      - Bearer <OANDA_TESTING_API_TOKEN>
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 30
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty/1.7.0.1
+      Date:
+      - Tue, 12 Apr 2016 01:10:09 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '139'
+      Connection:
+      - keep-alive
+      Etag:
+      - '"82242c079ed86208ffd6320c1b4f1e236fcc6566"'
+    body:
+      encoding: UTF-8
+      string: "{\n\t\"prices\" : [\n\t\t{\n\t\t\t\"instrument\" : \"EUR_USD\",\n\t\
+        \t\t\"time\" : \"2016-04-12T01:10:03.272613Z\",\n\t\t\t\"bid\" : 1.14111,\n\
+        \t\t\t\"ask\" : 1.14124\n\t\t}\n\t]\n}"
+    http_version:
+  recorded_at: Tue, 12 Apr 2016 01:10:09 GMT
+- request:
+    method: get
+    uri: https://api-fxpractice.oanda.com/v3/prices?instruments=EUR_USD
     body:
       encoding: US-ASCII
       string: ''

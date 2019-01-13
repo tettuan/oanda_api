@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api-fxpractice.oanda.com/v1/candles?candleFormat=midpoint&count=1&granularity=M1&instrument=EUR_USD
+    uri: https://api-fxpractice.oanda.com/v3/candles?candleFormat=midpoint&count=1&granularity=M1&instrument=EUR_USD
     body:
       encoding: US-ASCII
       string: ''
